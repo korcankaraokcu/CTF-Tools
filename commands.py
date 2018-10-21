@@ -5,9 +5,7 @@ gdb.execute("set disassembly-flavor intel")
 
 
 def get_mem_file():
-    inferior = gdb.selected_inferior()
-    pid = inferior.pid
-    return "/proc/" + str(pid) + "/mem"
+    return "/proc/" + str(gdb.selected_inferior().pid) + "/mem"
 
 
 def get_registers():
