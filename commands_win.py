@@ -78,7 +78,7 @@ class SingleCommandBP(gdb.Breakpoint):
 
 """
 snake-solve start_address control_flow bad_boy good_boy good_end
-snake-solve 0x7FF7EAED4BB0 0x7FF7EAED4BBC 0x7FF7EAED4C23 0x7FF7EAED4C07 0x7FF7EAED4C17
+snake-solve 0x7FF7EAED4BB0 0x7FF7EAED4BBC 0x7FF7EAED4C23 0x7FF7EAED4C07 0x7FF7EAED4C17 (Snake+4BB0) (Snake+4BBC) (Snake+4C23) (Snake+4C07) (Snake+4C17)
 you can delete the disabled breakpoints afterwards
 """
 class SnakeSolve(gdb.Command):
